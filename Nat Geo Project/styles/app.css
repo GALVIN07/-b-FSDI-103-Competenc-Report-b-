@@ -1,0 +1,51 @@
+body{
+    background-color: white;
+}
+img{
+    max-width: 100%;
+}
+
+.img-container{
+    width: 100px;
+    background-color: white;
+}
+header{
+    background-image: url(../Images/Engagment\ .jpg);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/*boxex*/
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40rem;
+    background-color: lightblue;
+    flex-wrap: wrap;
+}
+.flex-element{
+    background-color: green;
+    color: greenyellow;
+    border: 1px solid black;
+    flex-basis: 15rem;
+    height: 5rem;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.grid-element{
+    background-color: gray;
+    color: black;
+    border: 1px solid black;
+    padding: 1rem;
+}
+@media(min-width:768px){
+    .grid-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
